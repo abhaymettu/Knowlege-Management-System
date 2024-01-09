@@ -10,14 +10,10 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 
 import config
 
-# Setup constants and API keys
 GITHUB_TOKEN = config.GITHUB_ACCESS_TOKEN
 ES_INDEX = "knowledge_base"
 
-# Initialize sentiment analyzer
 sia = SentimentIntensityAnalyzer()
-
-# Definition of utility functions
 
 def parse_github_url(url):
     parts = url.strip("/").split("/")
