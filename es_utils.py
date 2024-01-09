@@ -1,4 +1,3 @@
-# es_utils.py
 from elasticsearch import Elasticsearch
 from . import es_config
 
